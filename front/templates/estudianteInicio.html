@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Educacion Estrella</title>
+
+</head>
+<body>
+  
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Asistencias</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Servicio Atencion Psicológica</th>
+            <td>{{sAtPsicologica}}</td>
+            <td><form method="post" >
+              {% csrf_token %}
+              <input type="submit" class="btn btn-success" value="Asistir" name="asistirsAtPsicologica"></form>	 </td>
+          </tr>
+          <tr>
+            <th scope="row">Servicio Bolsa de Empleo</th>
+            <td>{{sBoEmpleo}}</td>
+            <td><form method="post" >
+              {% csrf_token %}
+              <input type="submit" class="btn btn-success" value="Asistir" name="asistirssBoEmpleo"></form>	 </td>
+          </tr>
+          <tr>
+            <th scope="row">Servicio Curso</th>
+            <td>{{sCurso}}</td>
+            <td><form method="post" >
+              {% csrf_token %}
+              <input type="submit" class="btn btn-success" value="Asistir" name="asistirsCurso"></form>	 </td>
+          </tr>
+          <tr>
+            <th scope="row">Servicio Mentoria</th>
+            <td>{{sMentoria}}</td>
+            <td><form method="post" >
+              {% csrf_token %}
+              <input type="submit" class="btn btn-success" value="Asistir" name="asistirsMentoria"></form>	 </td>
+          </tr>
+          <tr>
+            <th scope="row">Servicio Educacion Continua</th>
+            <td>{{sEdContinua}}</td>
+            <td><form method="post" >
+              {% csrf_token %}
+              <input type="submit" class="btn btn-success" value="Asistir" name="asistirsEdContinua"></form>	 </td>
+          </tr>
+        </tbody>
+      </table>	
+</body>
+</html>
